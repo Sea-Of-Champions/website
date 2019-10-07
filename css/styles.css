@@ -1,0 +1,61 @@
+
+.page-section.slider{
+	padding: 2rem 0;
+}
+
+.slide-body{
+  max-height: 700px;
+  height: 700px;
+  margin: 0 40px; 
+  background-size: cover !important;
+  color: #fff;
+}
+
+
+.slide-character{
+	position: absolute;
+    top: 5px;
+    right: 49.8%;
+    z-index: 2;
+}
+
+.slide-icon{
+	width: 100px;
+	height: 100px;
+	margin: 10px auto;
+	position: relative;
+	z-index: 3;
+}
+
+.slide-title{
+	position: relative;
+	z-index: 3;
+}
+
+.slide-copy{
+	position: relative;	
+	z-index: 3;
+}
+
+.slick-center .slide-body{
+	max-height: 800px;
+	height: 800px;
+}
+
+
+//gradient border behind active carousel item
+.slide1{
+	background: url('../img/slider-images/slide1.png');
+}
+.slide2{
+	background: url('../img/slider-images/slide2.png');
+}
+.slide3{
+	background: url('../img/slider-images/slide3.png');
+}
+.slide4{
+	background: url('../img/slider-images/slide4.png');
+}
+.slide5{
+	background: url('../img/slider-images/slide5.png');
+}
