@@ -1,27 +1,58 @@
+@font-face{
+   src: url(fonts/ADega-Serif-Regular.otf) format(‘opentype’);
+   font-family: ADega;
+}
+body, h1, h2, h3, h4, h5, h6{ font-family: ADega;}
 
 .page-section.slider{
 	padding: 2rem 0;
 }
 
+.slick-slide{
+	padding-top: 100px;
+}
+
 .slide-body{
-  max-height: 700px;
-  height: 700px;
+  max-height: 580px;
+  height: 100vh;
   margin: 0 40px; 
   background-size: cover !important;
   color: #fff;
+  padding: 0 40px;
+  position: relative;
 }
 
 
 .slide-character{
 	position: absolute;
-    top: 5px;
-    right: 49.8%;
+    top: -60px;
+    width: 130%;
+    left: -40px;
     z-index: 2;
 }
 
+.slide-boarder{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.slide-boarder-bottom{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 3;
+}
+
+.slide-contents{
+	padding-top: 170px;
+}
+
 .slide-icon{
-	width: 100px;
-	height: 100px;
+	width: 65px;
+	height: 75px;
 	margin: 10px auto;
 	position: relative;
 	z-index: 3;
@@ -30,16 +61,50 @@
 .slide-title{
 	position: relative;
 	z-index: 3;
+	font-size: 2em;
+	color: #fedd9f;
+	line-height: 30px;
+	margin-bottom: 15px;
+
+}
+.slide-title span.small-text{
+	font-size: 20px;
+	color: #996a32;
+	font-style: italic;
+	position: relative;
+    bottom: 5px;
+
+}
+.slide-title span.callout-text{
+	font-size: 1.3333em;
+	display: block;
 }
 
 .slide-copy{
-	position: relative;	
-	z-index: 3;
+	position: relative;
+    z-index: 3;
+    padding-bottom: 15px;
+    color: #d9ccb3;
+    line-height: 18px;
+    font-size: 15px;
 }
 
-.slick-center .slide-body{
-	max-height: 800px;
-	height: 800px;
+/*play actions should stay grouped*/
+.play-bg{
+	position: absolute;
+    bottom: -46px;
+    left: calc(47% - 3px);
+    width: 100px;
+    height: 50px;
+    z-index: 1;
+}
+
+.play-button {
+    position: absolute;
+    bottom: -26px;
+    left: calc(48% - 3px);
+    height: 70px;
+    z-index: 1;
 }
 
 
