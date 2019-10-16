@@ -1,61 +1,101 @@
 
-.page-section.slider{
-	padding: 2rem 0;
+/* styles for header */
+@font-face{
+   src: url(fonts/ADega-Serif-Regular.otf) format(‘opentype’);
+   font-family: ADega;
 }
 
-.slide-body{
-  max-height: 700px;
-  height: 700px;
-  margin: 0 40px; 
-  background-size: cover !important;
-  color: #fff;
+body{ font-family: ADega;}
+
+nav{
+	margin-bottom: -72px;
 }
 
+body header.masthead{
+	background-image: url(../img/temporary/hero-img.jpg);
+}
 
-.slide-character{
+.banner-img, .soc-logo{
 	position: absolute;
-    top: 5px;
-    right: 49.8%;
-    z-index: 2;
+	top: 0;
 }
 
-.slide-icon{
-	width: 100px;
-	height: 100px;
-	margin: 10px auto;
+.banner-img{
+	left: calc(40% + 70px);
+}
+
+.soc-logo{
+    left: 35%;
+}
+
+.header-content{
 	position: relative;
-	z-index: 3;
+	top: 60%;
 }
 
-.slide-title{
+.header-copy{
+	width: 38%;
+	margin: 40px auto 20px auto;
+}
+
+p{
+	color: #d9ccb3;
+	font-size: 18px;
+}
+
+/* styles for middle-content */
+.event-descriptor{
+	background-color: #0B0814;
+}
+
+.descriptor-copy{
+	margin-top: 50px;
+}
+
+.event-info{
+	height: 100vh;
+	background-image: url(../img/temporary/content-img.jpg);
+}
+
+.event-info-col{
 	position: relative;
-	z-index: 3;
+    top: 35%;
 }
 
-.slide-copy{
-	position: relative;	
-	z-index: 3;
+/* thar rules */
+.rules-copy{
+	margin-top: 80px;
 }
 
-.slick-center .slide-body{
-	max-height: 800px;
-	height: 800px;
+ul.rules-list{
+	list-style:none;
+	padding: 0;
+}
+
+ul.rules-list li{
+	padding: 0.1em 0 0em 29px;
+    background-image: url(../img/temporary/bullet-point.png);
+    background-repeat: no-repeat;
+    background-position: 0px 10px;
+    background-size: 12px;
+    color: #996a32;
+    font-style: italic;
+    font-size: 18px;
 }
 
 
-//gradient border behind active carousel item
-.slide1{
-	background: url('../img/slider-images/slide1.png');
+
+
+/* media query override */
+@media (min-width: 1200px){
+	.container {
+	    max-width: 1420px;
+	}
 }
-.slide2{
-	background: url('../img/slider-images/slide2.png');
-}
-.slide3{
-	background: url('../img/slider-images/slide3.png');
-}
-.slide4{
-	background: url('../img/slider-images/slide4.png');
-}
-.slide5{
-	background: url('../img/slider-images/slide5.png');
-}
+
+
+
+
+
+
+
